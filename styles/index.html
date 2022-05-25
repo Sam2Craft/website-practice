@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--- needs to be at start of every html doc --->
+
+<html>
+<!-- this tag needs to be at beginning and end of every html doc, all other code goes between these two  -->
+
+<head>
+        <!-- Everything inside the head tag contains all the administrative info about the page that isn't displayed-->
+
+        <title> Big Al is Coming soon!</title> <!-- The title tag is the title of the website -->
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+        <!--Self closing tag, used to reference your style sheet, goes in your head section, the type allows it to understand that its a text file written in css format, the href finds that style sheet-->
+</head>
+
+<body>
+        <div id="container"> <!-- the container div can be used to auto format the enter content in css very important -->
+                <!-- All the design and visiual elements of the website goes into the body tags-->
+                <div id="main">
+                        <img class ="right snapshot" src="../Images/big-al.gif" width="275" height="183"
+                                alt="A photo of the University of Alabama's mascot: Big Al" />
+                        <!-- img tages have these 4 MANDATORY tags: src stands for source and ur telling the browser where the source of the image is coming from can be done be opening an image in a new tab and copying the link, width and height use the images px size found in the images dimesnions under right click+properties +details, alt is used to give a description of the image should be descriptive -->
+                        <h1> Coming Soon!</h1>
+                        <!-- Header tag for a title like thing, goes from h1 all the way to  h6-->
+                        <p> Big Al, coming to a place near you!</p> <!-- Paragraph tag, use for large chunks of text-->
+
+                        <div id="email">
+                                <p> Email <a href="mailto:srmabry@crimson.ua.edu">srmabry@crimson.ua.edu</a> for more
+                                        info.</p>
+                                <!-- the 'mailto:' is used open the default mailing application with a new draft open that is sending to the attatched email address after-->
+                        </div>
+                </div>
+                <div class = "uppercase" id="footer"> <!--Calling the uppercase class in our css to make all text in this div class uppercase--> 
+                        <a href="https://www.instagram.com/univofalabama/?hl=en"><img
+                                        src="../Images/ig icon.png" width="64"
+                                        height="64" alt="Instagram icon created by Flaticon"></a>
+                        <!-- images are always treated inline, think of console.write rather than console.writeline-->
+                        <a href="https://www.facebook.com/universityofalabama/"> <img
+                                        src="../Images/fb icon.png"
+                                        width="64" height="64" alt="Facebook icon created by Flaticon"></a>
+                        <!-- the 'a' tag can be wrapped around an img tag to hyperlink the image-->
+                        <a href="https://www.youtube.com/user/UniversityofAlabama?app=desktop"> <img
+                                        src="../Images/youtube.png" width="64"
+                                        height="64" alt="Youtube icon crrated by Flaticon "></a>
+                        <p> Webpage design &#169; 2022 by <a href="https://www.linkedin.com/in/sam-mabry/"> Sam Mabry
+                                </a> at <a href="https://www.ua.edu/">University of Alabama</a> (Tuscaloosa, Alabama)
+                        </p>
+                        <!-- #that weird combo of numbers is the amerpsands code for the copyright symbol, easily found by googling. #'a' tag stands for attribute, href stands for hyperlink reference, what needs to go inside is the hyperlink you want the tag to pair too-->
+                </div>
+        </div>
+</body>
+
+</html>

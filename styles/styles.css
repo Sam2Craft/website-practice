@@ -1,0 +1,137 @@
+/*!!!!!!when choosing a template of colors for your website use colorexplorer.com and upload an image associaetd with the project to develop a template of colors for your website, save then download the pallette as a png !!!!!*/
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    /*font-family is used to change the type of font within the tag, there are several "websafe font combination" on google. The three fonts seperated by comma are used in sequence so if the first font isn't availbile to the user, it tries the second, then the third. The third must always be some sort of serif font */
+    background-color: #AD0937;
+    color: black;
+    /* color affects all text color associated with the above tag*/
+
+}
+
+/*the body tag addresses the entire body portion of your html file*/
+
+h1 {
+    font-size: 300%;
+    color: white;
+    /* use percentage sizes so the website can properly scale to changes*/
+
+
+}
+
+/* addresses the header 1 only*/
+
+p {
+    font-size: 120%;
+    line-height: 1; /*anything near one is like on line of text as spacing*/
+}
+
+/*addresses anything in the p tag*/
+
+a {
+    color: #fff5fa;
+    text-decoration: none;
+    /* removes the underlines from our hyperlinks, the text decoration can be used for other texts*/
+}
+
+/* the 'a' tag will affect all hyperlinks*/
+
+div {
+    border-width: 1px;
+    /* sets the width of the border*/
+    border-style: dashed;
+    border-color: transparent; /* transparent is a valid color, just to hide border, could change to white for reference and editing purpoes*/
+    border-radius: 10px; /* can be used to round corners of a border, bigger the number starts to make it an oval*/
+    
+
+}
+
+/*div tag will affect every every different div tag*/
+
+.lowercase {
+    /* this creates a class, a class can be called ina  div to apply its property to everythign within that div*/
+    text-transform: lowercase;
+    /* forces all of the text in the header to go to lowercase*/
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.right {
+    float: right;
+    /* moves an item or element to right, can be used with various position commands.*/
+}
+
+#main {
+    /* this calls a div witha specific Id*/
+
+    background-color: #bf4e6b;
+    padding: 30px;  /* helps create some space between some elements*/
+    box-shadow:5px 5px 15px rgba(0,0,0,.5);/* first pixel is horizontal offset of shadow, second px is verticle offset, third is how blurry the shadowis and how much it spreads out, last is teh color of the shadow, the a in rgba is the opacity of the shade, 1 is pitch black*/
+}
+   
+
+
+
+#email {
+    background-color: #E08B9F;
+    color: black;
+    width: 50%;
+    /*sets width of the block*/
+    text-align: center;
+    /*Used to position the text inside the div*/
+    margin: auto;
+    /* margin positions the block, auto makes the margin size the same and fluid when transitioning to mobile*/
+    clear: both;
+    /* ensures this element will  not overlap with other elements, the both attribute ensures it for both the left and rright side of the element */
+    font-size: 120%;
+    box-shadow:5px 5px 15px rgba(0,0,0,.5); /* first pixel is horizontal offset of shadow, second px is verticle offset, third is how blurry the shadowis and how much it spreads out, last is teh color of the shadow, the a in rgba is the opacity of the shade, 1 is pitch black*/
+}
+
+#email a{
+    color: #7d2e41;
+}
+
+#email a:hover{ /* this is a pesudo class, when a link is hoovered (in this case the email address) we are able to change what happens upon hover*/
+color: #f2d4d3;
+}
+
+#footer {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 50%;
+    padding: 20px;
+}
+
+#container {
+
+    width: 75%;
+    margin: auto;
+    margin-top: 50px;
+    /* used to adjust how much space from the top it should be*/
+}
+
+#footer img {
+    /* here we are able to select any thing within or footer id that is an img and adjust them*/
+    margin: 5px;
+  
+    /* applys a 5 pixel margin all around each img*/
+}
+
+#footer a:hover{
+color:#7a0c28; 
+}
+
+img.snapshot{ /*making a class sepcifc to the img selectors with img.   a class only to be used on images*/
+border: 10px;
+border-style: solid;
+border-color: white;
+box-shadow:5px 5px 15px rgba(0,0,0,.5);
+margin: 5px 10px 20px 20px; /*top val, right val, bot val, left val (order of pixel values for margin)*/
+
+transform: rotate(5deg); /*rotates our element*/
+}
+
